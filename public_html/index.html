@@ -1,16 +1,124 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foundation for Sites</title>
+        <link rel="stylesheet" href="assets/css/foundation.css">
+        <link rel="stylesheet" href="assets/css/app.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="grid-container">  
+            <div class="row">
+                <ul class="menu top-bar right text-center">
+                    <li class="is-active top-bar-left"><a href="#">Kanzlei</a></li>
+                    <li class="top-bar-left"><a href="#">Tätigkeiten</a></li>
+                    <li class="top-bar-left"><a href="#">Team</a></li>
+                    <li class="top-bar-left"><a href="#">Kontakt</a></li>
+                    <li class="top-bar-right"><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>            
+                </ul>
+            </div>
+            <div class="row">
+                <div class="grid-x grid-margin-x text-center">
+                    <div class="cell small-12 medium-4">
+                        <div class="card">
+                            <h4>Ist das Arbeit?</h4>                            
+                            <img src="assets/images/team1.jpg">
+                            <div class="card-section">                                
+                                <p>Trägheit, wohin das Auge schaut</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell small-12 medium-4">
+                        <div class="card">
+                            <h4>Ist das Arbeit?</h4>                            
+                            <img src="assets/images/team1.jpg">
+                            <div class="card-section">                                
+                                <p>Trägheit, wohin das Auge schaut</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell small-12 medium-4">
+                        <div class="card">
+                            <h4>Ist das Arbeit?</h4>                            
+                            <img src="assets/images/team1.jpg">
+                            <div class="card-section">                                
+                                <p>Trägheit, wohin das Auge schaut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">                
+                <ul class="accordion text-center" data-deep-link="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="600" data-accordion id="deeplinked-accordion-with-smudge">
+                    <li class="accordion-item is-closed" data-accordion-item>
+                        <a href="#" class="accordion-title">Accordion 1</a>
+                        <div class="accordion-content is-closed" data-tab-content>
+                            <p>Panel 1. Lorem ipsum dolor</p>                            
+                        </div>
+                    </li>
+                    <li class="accordion-item is-closed" data-accordion-item>
+                        <a href="#" class="accordion-title">Accordion 1</a>
+                        <div class="accordion-content" data-tab-content>
+                            <p>Panel 1. Lorem ipsum dolor</p>                            
+                        </div>
+                    </li>
+                    <li class="accordion-item is-closed" data-accordion-item>
+                        <a href="#" class="accordion-title">Accordion 1</a>
+                        <div class="accordion-content" data-tab-content>
+                            <p>Panel 1. Lorem ipsum dolor</p>                            
+                        </div>
+                    </li>
+                </ul>                
+            </div>
+            <div class="row orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                <div class="orbit-wrapper">
+                    <div class="orbit-controls">
+                        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                    </div>
+                    <ul class="sorbit-container">
+                        <li class="is-active sorbit-slide">
+                            <figure class="sorbit-figure">
+                                <img class="sorbit-image" src="assets/images/team1.jpg" alt="Space">
+                                <figcaption class="sorbit-caption text-center">Faulenzen, den ganzen Tag lang ...</figcaption>
+                            </figure>
+                        </li>
+                        <!--li class="orbit-slide">
+                          <figure class="orbit-figure">
+                            <img class="orbit-image" src="assets/images/team2.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Die Schlimmste von allen! Sich ständig nur am Drucker rumdrücken</figcaption>
+                          </figure>
+                        </li>
+                        <li class="orbit-slide">
+                          <figure class="orbit-figure">
+                            <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
+                            <figcaption class="orbit-caption">Encapsulating</figcaption>
+                          </figure>
+                        </li>
+                        <li class="orbit-slide">
+                          <figure class="orbit-figure">
+                            <img class="orbit-image" src="https://placehold.it/1200x600/666&text=Slide-4" alt="Space">
+                            <figcaption class="orbit-caption">Outta This World</figcaption>
+                          </figure>
+                        </li>
+                      </ul-->
+                </div>
+                <nav class="orbit-bullets">
+                    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                </nav>
+            </div>
+
+        </div>
+
+        <script src="assets/js/vendor/jquery.js"></script>
+        <script src="assets/js/vendor/what-input.js"></script>
+        <script src="assets/js/vendor/foundation.js"></script>
+        <script src="assets/js/app.js"></script>
     </body>
 </html>
